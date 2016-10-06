@@ -113,7 +113,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
 
         t,s,a,b,c,d = tools.readrout( filename , "H3O(+)" )
-        print(a[0, 0, :]        
+        print(a[0, 0, :])        
 
 
         numpy.testing.assert_almost_equal( a.tolist(), a_o )
