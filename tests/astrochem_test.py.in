@@ -23,7 +23,6 @@ import subprocess
 import sys
 import numpy
 import unittest
-import math
 
 sys.path.append("@abs_top_srcdir@/python/")
 import tools
@@ -114,6 +113,8 @@ class TestSequenceFunctions(unittest.TestCase):
 
 
         t,s,a,b,c,d = tools.readrout( filename , "H3O(+)" )
+        print(a[0, 0, :]        
+
 
         numpy.testing.assert_almost_equal( a.tolist(), a_o )
         numpy.testing.assert_almost_equal( b.tolist(), b_o )
